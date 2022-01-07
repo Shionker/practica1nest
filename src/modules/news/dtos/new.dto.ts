@@ -12,6 +12,10 @@ export class CreateNewDTO {
     @IsString()
     @ApiProperty()
     readonly description: string;
+
+    @IsString()
+    @ApiProperty()
+    readonly location: string;
     
     @IsNumber()
     @ApiProperty()
@@ -26,6 +30,9 @@ export class NewsDTO {
     
     @IsString()
     readonly description: string;
+
+    @IsString()
+    readonly location: string;
      
     @IsNumber()
     readonly newsId: number;
